@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: revive-adserver
+    env: docker
+    repo: https://github.com/your-username/groupon-adserver-starter
+    branch: main
+    dockerContext: .
+    dockerfilePath: Dockerfile
+
+databases:
+  - name: revive-db
