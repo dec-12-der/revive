@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 RUN a2enmod rewrite
 
 # Download Revive Adserver (change version as needed)
-RUN curl -L https://download.revive-adserver.com/revive-adserver-5.5.2.zip -o revive.zip \
+RUN curl -L https://download.revive-adserver.com/revive-adserver-5.5.1.zip -o revive.zip \
     && unzip revive.zip -d /var/www/html \
     && rm revive.zip
 
